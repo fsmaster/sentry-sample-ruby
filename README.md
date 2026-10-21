@@ -59,6 +59,9 @@ may not have time to send.
 
 With Rails you add `sentry-rails` gem too, it adds request data and performance spans. Init is the same.
 
+`/trigger` also takes an optional `"dsn"` in the body. The playground sends it when a visitor checks
+**Use my DSN**, then only this one event goes to their project (a separate client, the global one is untouched).
+
 ## Troubleshooting
 
 | Symptom | Why |
